@@ -16,6 +16,10 @@ public class firstCode {
 
         System.out.println(c);
 
+        c = a + b;
+
+        System.out.println(c);
+        
         c = a / b;
         // if you want to see real result 3.3333, You should change instead of int a and int c to double a and double c //
         System.out.println(c);
