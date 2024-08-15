@@ -2,17 +2,23 @@ public class firstCode {
 
     public static void main(String[] args) {
 
-        int godinaRodjenjaStudenta;
-        int godinaRodjenjaProfesora;
+        //double a = 10;
+        int a = 10;
+        int b = 3;
+        //double c;
+        int c;
 
-        godinaRodjenjaStudenta = 1988;
-        godinaRodjenjaProfesora = 1957;
+        c = a * b;
 
-        int razlikaUGodinama = godinaRodjenjaStudenta - godinaRodjenjaProfesora;
+        System.out.println(c);
 
-        String ispis = "Razlika u godinam je: " + razlikaUGodinama + ".";
+        c = a * a * b;
 
-        System.out.println(ispis);
+        System.out.println(c);
+
+        c = a / b;
+        // if you want to see real result 3.3333, You should change instead of int a and int c to double a and double c //
+        System.out.println(c);
 
     }
 }
