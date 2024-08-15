@@ -14,5 +14,9 @@ public class firstCode {
 
         System.out.println("Kvadratni koren unetog broja je: " + f);
 
+        double y = Math.pow(f, 3.0);
+
+        System.out.println("Kub kvadratnog korena za uneti broj je: " + y);
+
     }
 }
