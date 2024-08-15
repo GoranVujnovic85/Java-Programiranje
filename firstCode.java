@@ -6,12 +6,13 @@ public class firstCode {
 
         Scanner s = new Scanner(System.in);
 
-        System.out.print("Unesite temperaturu u Farahajtima: ");
+        System.out.print("Unesite neki broj: ");
 
-        double tempF = s.nextDouble();
-        double tempC = (tempF - 32) / 1.8;
+        double x = s.nextDouble();
 
-        System.out.println("Temperatura u stepenima iznosi: " + tempC);
+        double f = Math.sqrt(x);
+
+        System.out.println("Kvadratni koren unetog broja je: " + f);
 
     }
 }
