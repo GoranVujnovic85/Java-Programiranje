@@ -6,17 +6,24 @@ public class firstCode {
 
         Scanner s = new Scanner(System.in);
 
-        System.out.print("Unesite neki broj: ");
+        System.out.print("Unesite ime grada: ");
 
-        double x = s.nextDouble();
+        String imeGrada = s.nextLine();
 
-        double f = Math.sqrt(x);
+        imeGrada = imeGrada.toUpperCase();
+        imeGrada = imeGrada.trim();
 
-        System.out.println("Kvadratni koren unetog broja je: " + f);
+        if (imeGrada.equals("BEOGRAD") || imeGrada.equals("NOVI SAD"))
+        {
+            System.out.println("Imamo predstavnistvo u tom gradu.");
 
-        double y = Math.pow(f, 3.0);
+        }
+        else
+        {
+            System.out.println("Zao nam je ali nemamo predstavnistvo u tom gradu!");
+        }
 
-        System.out.println("Kub kvadratnog korena za uneti broj je: " + y);
+        System.out.println("Program je zavrsen!");
 
     }
 }
