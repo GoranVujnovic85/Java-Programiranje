@@ -2,28 +2,38 @@ import java.util.Scanner;
 
 public class firstCode {
 
-    public static void main(String[] args) {
+    public static void main(String[] args)
+    {
 
         Scanner s = new Scanner(System.in);
 
-        System.out.print("Unesite ime grada: ");
+        int tajniBroj =  55;
 
-        String imeGrada = s.nextLine();
-
-        imeGrada = imeGrada.toUpperCase();
-        imeGrada = imeGrada.trim();
-
-        if (imeGrada.equals("BEOGRAD") || imeGrada.equals("NOVI SAD"))
+        for (int i = 0; i < 10; i++)
         {
-            System.out.println("Imamo predstavnistvo u tom gradu.");
+            System.out.print("Unesite jedan broj: ");
 
-        }
-        else
-        {
-            System.out.println("Zao nam je ali nemamo predstavnistvo u tom gradu!");
+            int broj = s.nextInt();
+
+            if (broj == tajniBroj)
+            {
+                System.out.println("Pogodak!");
+                break;
+            }
+            else
+            {
+                if (tajniBroj > broj)
+                {
+                    System.out.println("Tajni broj je veci od broja koji ste uneli!");
+                }
+                else
+                {
+                    System.out.println("Tajni broj je manji od broja koji ste uneli!");
+                }
+            }
+
         }
 
         System.out.println("Program je zavrsen!");
-
     }
 }
