@@ -14,6 +14,14 @@ public class firstCode {
         }
     }
 
+    public static int najveciOdTriBroja (int a, int b, int c)
+    {
+       int veciOdPrvaDva = dvaBroja(a, b);
+
+       int najveciOdTriBroja = dvaBroja(veciOdPrvaDva, c);
+
+       return najveciOdTriBroja;
+    }
 
     public static void main(String[] args)
     {
@@ -28,16 +36,11 @@ public class firstCode {
         System.out.print("Unesite treci broj: ");
         int treciBroj = s.nextInt();
 
-        int veciBroj = dvaBroja(prviBroj, drugiBroj);
+        int zaIspis = najveciOdTriBroja(prviBroj, drugiBroj, treciBroj);
 
-        int veciOdPrvaDvaBroja = dvaBroja(veciBroj, treciBroj);
-
-        System.out.println("Veci od prva dva uneta broja je broj: " + veciBroj);
-        System.out.println("Veci od prva dva uneta broja pa zatim dodat treci broj je broj: " + veciOdPrvaDvaBroja);
-
+        System.out.println("Najveci od tri uneta broja je broj: " + zaIspis);
 
 
     }
-
 
 }
