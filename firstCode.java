@@ -16,11 +16,7 @@ public class firstCode {
 
     public static int najveciOdTriBroja (int a, int b, int c)
     {
-       int veciOdPrvaDva = dvaBroja(a, b);
-
-       int najveciOdTriBroja = dvaBroja(veciOdPrvaDva, c);
-
-       return najveciOdTriBroja;
+       return dvaBroja(dvaBroja(a, b), c);
     }
 
     public static void main(String[] args)
