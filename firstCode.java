@@ -25,9 +25,15 @@ public class firstCode {
         System.out.print("Unesite drugi broj: ");
         int drugiBroj = s.nextInt();
 
+        System.out.print("Unesite treci broj: ");
+        int treciBroj = s.nextInt();
+
         int veciBroj = dvaBroja(prviBroj, drugiBroj);
 
-        System.out.println("Veci od dva uneta broja je broj " + veciBroj);
+        int veciOdPrvaDvaBroja = dvaBroja(veciBroj, treciBroj);
+
+        System.out.println("Veci od prva dva uneta broja je broj: " + veciBroj);
+        System.out.println("Veci od prva dva uneta broja pa zatim dodat treci broj je broj: " + veciOdPrvaDvaBroja);
 
 
 
